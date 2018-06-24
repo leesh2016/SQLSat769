@@ -1,8 +1,8 @@
 #List current Auditing policies
 #https://docs.microsoft.com/en-us/cli/azure/sql/db/audit-policy?view=azure-cli-latest#az-sql-db-audit-policy-show
-$server = "sqlauditlogsvr"
-$database = "SQLAudit_AzureDB"
-$rgroup = "SQLAuditLogs"
+$server = "ServerName"
+$database = "DBNAme"
+$rgroup = "ResourceGroup"
 az sql db audit-policy show -s $server -n $database --resource-group $rgroup
 
 #https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/set-azurermsqldatabaseauditingpolicy?view=azurermps-6.3.0
